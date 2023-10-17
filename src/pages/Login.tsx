@@ -65,14 +65,26 @@ const Login = () => {
 
   return (
     <Flex w="full" display={"flex"} flexDirection={"column"}>
-      <Text
-        margin={"150px auto 30px auto"}
-        textAlign={"center"}
-        fontSize={35}
-        fontWeight={"bold"}
+      <Flex
+        margin="150px auto 0 auto"
+        flexDirection="column"
+        alignItems="flex-start"
       >
-        Infinity Time - Make Your Time Unlimited
-      </Text>
+        <Text
+          fontSize={{ base: "20px", md: "25px", xl: "30px" }}
+          textColor="cyan.400"
+          fontWeight={"bold"}
+        >
+          Infinity Time
+        </Text>
+        <Text
+          fontSize={{ base: "25px", md: "40px", xl: "50px" }}
+          textAlign="center"
+          fontWeight={"bold"}
+        >
+          MAKE YOUR TIME UNLIMITED
+        </Text>
+      </Flex>
       <Lottie
         style={{
           width: "300px",
